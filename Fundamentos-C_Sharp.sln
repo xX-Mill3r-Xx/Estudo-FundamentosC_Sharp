@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001LinguagensECompiladores"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002C_Sharp", "002C_Sharp\002C_Sharp.csproj", "{18147F8F-49B2-43D7-ADF7-3F632081F5A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003FrameWorks", "003FrameWorks\003FrameWorks.csproj", "{6112475C-C6D3-4893-989A-FE9008245097}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{18147F8F-49B2-43D7-ADF7-3F632081F5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18147F8F-49B2-43D7-ADF7-3F632081F5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18147F8F-49B2-43D7-ADF7-3F632081F5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6112475C-C6D3-4893-989A-FE9008245097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6112475C-C6D3-4893-989A-FE9008245097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6112475C-C6D3-4893-989A-FE9008245097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6112475C-C6D3-4893-989A-FE9008245097}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
