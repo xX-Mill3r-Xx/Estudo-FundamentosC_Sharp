@@ -68,7 +68,43 @@ namespace _005LinguagemDeProgramacao_CSharp
 
             /*Tipos Primitivos
              
+            Definiçoes:
+            - Tambem conhecidos como build-in types, são tipos cujo outos tipos (Complexos) irão derivar;
+            - Definir o tipo correto otimiza a execução do programa;
+            - São chamados de Tipos de Valor (Value Types);
+            - Armazenam o valor e não a referencia para um item na memoria;
+            - São classificados em 
+              - Tipos simples (Simple Types)
+              - Enumeradores (Enums)
+              - Estrtuturas (Structs)
+              - Tipos Nulos (Nullable Types)
+
+            - Cada tipo possui uma capacidade;
+            - Caso esta capacidade exceda, o programa gera um erro;
+            - Esta capacidade pré-definida ajuda na otimização do seu programa, por ex.: o int que usamos previamente
+              -2,147,483,648 até 2,147,483,647
             */
+
+            /*Byte
+             
+            - O tipo byte é utilizado para representar um byte de fato
+            - Em diversos casos, precisamos da cadeia de bytes de um arquivo por exemplo, tambem chamado de byte array;
+            - Temos tambem o sbyte que permite valores negativos;
+             - byte(8-bit) = 0 até 255;
+             - sbyte(8-bite) = -128 até 127
+
+            - Note que o sbyte permite valores negativos, por isso no nome sbyte, que siguinifica Signed Byte;
+
+             */
+
+            #region byte
+            //byte meuByte = 127;
+            //Console.WriteLine(meuByte);
+            #endregion
+
+            /*
+             
+             */
 
             Console.ReadLine();
         }
