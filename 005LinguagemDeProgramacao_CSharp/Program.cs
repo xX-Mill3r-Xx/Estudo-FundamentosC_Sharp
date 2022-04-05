@@ -103,10 +103,162 @@ namespace _005LinguagemDeProgramacao_CSharp
             #endregion
 
             /*
-             
+             Object:
+
+            Definiçoes:
+            - Tipo generico que recebe valor ou objeto;
+            - Não possui intelisense (Ajuda dos editores) por ser um tipo desconhecido;
+            _ Evitar o uso;
+
+            Exemplos.:
              */
 
+            #region Object
+            //object idade = 25;
+            //object nome = "Miller";
+            #endregion
+
+            /*
+             Null
+
+            Definiçoes;
+            - Siguinifica vazio, nada;
+            - Diferente de zero ou uma string vazia;
+            - Todo tipo, primitivo ou complexo, pode receber o valor null;
+            - O tipo deve ser marcado como Nullable Type;
+
+            Exemplo de marcação para definir um tipo como null;
+             */
+
+            #region Null
+            //int? numero = null;
+            //string? nome = null;
+            #endregion
+
+            /*Alias
+             
+            Definiçoes;
+            - Alias é um apelido que todo tipo no .Net tem;
+            Exemplo:
+              - System.String tem o alias string
+
+            obs.: Como o C# é Case Sensitive, tanto faz se escrevermos um ou outro, porem, o recomendado é sempre usar o alias;
+
+            Exemplo.: No caso abaixo, o resultado é o mesmo;
+             */
+
+            #region Alias
+            //int idade = 25; // alias
+            //Int32 idade1 = 25; //tipo
+            #endregion
+
+            /*Valores padroes;
+             
+            Quando definimos um tipo em C#, ele sempre vem com um valor padrão, nunca nulo;
+
+            Definiçoes:
+            - Todo tipo built-in ja possui um valor padrao;
+            - Se nenhum valor for informado, seu valor sera o valor padrão;
+            exemplos valores padroes;
+              - int = 0;
+              - float = 0f;
+              - decimal = 0m;
+              - bool = false;
+              - char = '\0';
+              - string = "";
+             */
+
+            /*Conversão de dados;
+             Implicitas;
+
+            Definiçoes: 
+            - É comum precisarmos trasformar um dado do tipo X para tipo Y;
+            - Existem dois tipos de conversão, as inplicitas e as explicitas;
+            - As implicitas são coversões que podem ser executadas apenas com a passagem de dados. Possui tipos compativeis;
+
+            Exemplo de uma conversão implicita:
+             */
+
+            #region Implicita
+            //float valor = 25.8f; //valor tipo float;
+            //int outro = 25; // valor tipo inteiro;
+
+            //valor = outro; // o tipo float aceita um valor do tipo inteiro;
+            #endregion
+
+            /*Conversão de dados;
+            Explicitas; 
+
+            Definiçoes;
+            - Ocorre quando os tipos não são compativeis;
+            - É dada pelo uso do tipo entre parenteses antes da atribuição;
+            - Segue as mesmas regras anteriores;
+
+            Exemplo de uma conversão explicita;
+             */
+
+            #region Explicita
+            //int inteiro = 100;
+            //uint inteiroSemSinal = (uint)inteiro; // Convensão explicita;
+            #endregion
+
+            /*Metodo Parse
+             
+            Definiçoes:
+            - Metodo presente em todo tipo primitivo;
+            - Usado para converter um caractere ou string para um tipo qualquer;
+            - Caso haja alguma incompatibilidade, gera um erro;
+
+            Exemplo.:
+             */
+
+            #region Parse
+            //int numInteiro = int.Parse("100");
+            #endregion
+
+            /*Metodo Convert
+             
+            Definiçoes:
+            - Similar ao parse;
+            Permite converter varios tipos de valores;
+            - Devemos informar o tipo na chamada da conversão;
+
+            Exemplo:
+             */
+
+            #region Convert
+            //int inteiro = Convert.ToInt32("100");
+            #endregion
+
+            /*Metodos e Funçoes
+             
+            Definiçoes:
+            - Podemos segmentar nosso programa em funçoes
+            - Tambem conhecidos como metodos;
+            - Possui um retorno, um nome e parametro;
+            - Esta composiçao é chamada de assinatura;
+            - Começa sempre com letra maiuscula;
+
+             */
+            #region Um metodo void na pratica
+            MeuMetodo();
+            #endregion
+
+            #region Metodo com retorno na pratica
+            string nome = RetornaNome("Miller");
+            #endregion
+
             Console.ReadLine();
+        }
+
+        static void MeuMetodo()
+        {
+            Console.WriteLine("Um metodo na pratica");
+        }
+
+        static string RetornaNome(string nome)
+        {
+            return "nome";
         }
     }
 }
