@@ -20,6 +20,7 @@ namespace _007Cronometro
             /**/
             Console.Clear();
             Menu();
+            /**/
 
             Console.ReadLine();
         }
