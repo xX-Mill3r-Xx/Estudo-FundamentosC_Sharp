@@ -241,12 +241,55 @@ namespace _005LinguagemDeProgramacao_CSharp
 
              */
             #region Um metodo void na pratica
-            MeuMetodo();
+            //MeuMetodo();
             #endregion
 
             #region Metodo com retorno na pratica
-            string nome = RetornaNome("Miller");
+            //string nome = RetornaNome("Miller");
             #endregion
+
+            /*
+             Value Types;
+
+            Definição:
+            - Qualquer tipo no .Net é tratado como:
+              - Tipo de referencia(Reference Types)
+              - Tipo de Valor(Value Types)
+
+            - Tipos de valor armazenam dados;
+            - São armazenados em um local da memoria chamado Stack
+             */
+
+            /*Enumeradores
+             
+            Definiçoes:
+            - Usado para fornecer uma melhor visualização do codigo;
+            - Substitui o uso de inteiros;
+            - Usado em listas curtas;
+            - Usado em dados fixos;
+            - Hard Coded;
+            - Sempre em maiusculo;
+            - Começar com a letrar E
+
+            - Anatomia de um Enumerador;
+
+            enum EEstadoCivil
+            {
+                Solteiro = 1,
+                Casado = 2,
+                Divorsiado = 3
+            }
+
+            ob.: Um enum pode ser usado como um tipo;
+            ex:
+
+            struct Cliente
+            {
+                public string Name;
+                public EEstadoCivil EstadoCivil;
+            }
+
+             */
 
             Console.ReadLine();
         }
